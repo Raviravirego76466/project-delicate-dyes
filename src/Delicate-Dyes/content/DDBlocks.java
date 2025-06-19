@@ -65,7 +65,7 @@ import static mindustry.type.ItemStack.*;
 public class DDBlocks {
     public static Block 
             blueExtractor = new AttributeCrafter("blueExtractor"){{
-            requirements(Category.production, with(Items.silicon, 60, Items.graphite, 60));
+            requirements(Category.production, with(Items.lead, 60, Items.spore, 60));
             outputItem = new ItemStack(DDItems.blueberries, 1);
             craftTime = 30;
             size = 2;
