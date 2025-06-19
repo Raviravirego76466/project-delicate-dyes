@@ -1,3 +1,5 @@
+package Delicate-Dyes.content;
+
 import arc.Core;
 import arc.Events;
 import arc.graphics.Color;
@@ -65,7 +67,7 @@ import static mindustry.type.ItemStack.*;
 public class DDBlocks {
     public static Block 
             blueExtractor = new AttributeCrafter("blueExtractor"){{
-            requirements(Category.production, with(Items.lead, 60, Items.spore, 60));
+            requirements(Category.production, with(Items.lead, 60, Items.sporePod, 60));
             outputItem = new ItemStack(DDItems.blueberries, 1);
             craftTime = 30;
             size = 2;
@@ -104,5 +106,25 @@ public class DDBlocks {
             });
 
             consumePower(1f);
+        }};
+   BurplePress = new GenericCrafter("burple-press"){{
+            requirements(Category.crafting, with(Items.sporePod, 60, DDItems.blueberries, 120));
+            liquidCapacity = 60f;
+            craftTime = 30f;
+            outputItem = new ItemStack(DDItems.burple, 1);
+            size = 3;
+            scaledHealth = 60;
+            hasLiquids = true;
+            hasPower = true;
+            craftEffect = new Effect(23, e -> {
+                float scl = Math.max(e.rotation, 1);
+                color(Tmp.c1.set(Pal.gray).mul(1.1f), Items.sporePod.color, e.fin());
+                randLenVectors(e.id, 8, size * 8f + 4 * e.finpow() * scl, (x, y) -> Fill.circle(e.x + x, e.y + y, e.fout() * 3.5f * scl + 0.3f));
+            }).layer(Layer.debris);
+            updateEffect = sporeSlowed;
+            drawer = new DrawMulti(new DrawDefault(), new DrawFrames(), new DrawLiquidRegion());
+
+            consumeItem(Items.sporePod, 60, DDItems.blueberries, 120);
+            consumePower(1.5f);
         }};
 }
