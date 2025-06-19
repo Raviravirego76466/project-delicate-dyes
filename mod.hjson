@@ -8,7 +8,7 @@ name: "delicate-dyes"
 author: "Raviravirego76466"
 
 #the fully qualified main class of the mod
-main: "Mod.Delicate.Dyes"
+main: "Mod.Delicate-Dyes"
 
 #the mod description as seen in the mod dialog
 description: "A Mindustry Java mod."
