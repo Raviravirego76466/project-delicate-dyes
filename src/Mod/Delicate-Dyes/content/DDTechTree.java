@@ -9,7 +9,7 @@ import mindustry.type.*;
 
 import static mindustry.content.Blocks.*;
 import static mindustry.content.TechTree.*;
-import static Mod.Delicate-Dyes.content.DDBlocks.*;
+import static Mod.Delicate-Dyes.content.DDBlocks;
 
 public class EUTechTree {
     public static TechNode context = null;
