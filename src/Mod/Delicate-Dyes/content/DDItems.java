@@ -32,4 +32,4 @@ public class DDItems {
     public static Item Wasabi = new Item("wasabi", Color.valueOf("ABD76F")){{
         cost = 1f;
     }};
-}
+};
