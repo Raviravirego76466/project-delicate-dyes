@@ -16,5 +16,4 @@ public class EUTechTree {
 
     public static void load() {
         addToNode(sporePress, () -> node(blueExtractor));
-        addToNode(blueExtractor, () -> node(BurplePress));
 }}
