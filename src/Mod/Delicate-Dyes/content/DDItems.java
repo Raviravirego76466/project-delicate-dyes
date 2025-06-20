@@ -1,4 +1,4 @@
-package Delicate-Dyes.content;
+package Mod.Delicate-Dyes.content;
 
 import arc.graphics.Color;
 import mindustry.graphics.Pal;
