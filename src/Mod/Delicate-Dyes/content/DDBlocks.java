@@ -106,4 +106,4 @@ public class DDBlocks {
             });
 
             consumePower(1f)
-        }};
+        }}
