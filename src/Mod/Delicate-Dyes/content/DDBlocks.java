@@ -1,4 +1,4 @@
-package Delicate-Dyes.content;
+package Mod.Delicate-Dyes.content;
 
 import arc.Core;
 import arc.Events;
