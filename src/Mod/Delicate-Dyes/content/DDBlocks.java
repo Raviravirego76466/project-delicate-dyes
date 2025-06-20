@@ -108,7 +108,7 @@ public class DDBlocks {
             consumePower(1f);
         }};
    BurplePress = new GenericCrafter("burple-press"){{
-            requirements(Category.crafting, with(Items.sporePod, 60, DDItems.blueberries, 120));
+            requirements(Category.crafting, with Items.sporePod, 60, DDItems.blueberries, 120);
             liquidCapacity = 60f;
             craftTime = 30f;
             outputItem = new ItemStack(DDItems.burple, 1);
