@@ -1,4 +1,4 @@
-package Mod.Delicate-Dyes.content;
+package Mod.DelicateDyes.content;
 
 import arc.struct.*;
 import mindustry.Vars;
