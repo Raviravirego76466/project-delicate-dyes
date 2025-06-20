@@ -103,6 +103,7 @@ public class DDBlocks {
             updateEffect = new Effect(20, e -> {
                 color(Pal.gray, Color.lightGray, e.fin());
                 randLenVectors(e.id, 6, 3f + e.fin() * 6f, (x, y) -> Fill.square(e.x + x, e.y + y, e.fout() * 2f, 45));
+            }
             });
 
             consumePower(1f);
